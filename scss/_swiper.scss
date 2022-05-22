@@ -1,50 +1,10 @@
-*,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-ul,
-ol,
-li {
-    list-style: none;
-}
-img {
-    vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-html,
-body {
-    height: 100%;
-    line-height: 1;
-    font-size: 14px;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .wrapper {
+    margin: 50px;
     padding: 30px;
     min-height: 100%;
 }
 /*-------------------*/
-.title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0px 0px 30px 0px;
-}
+
 .image-slider {
     padding: 30px 0 70px 0;
 }
@@ -58,10 +18,36 @@ body {
 .image-slider__image img {
     max-width: 100%;
 }
+/*Пагинация*/
+.image-slider .swiper-pagination {
+    bottom: 0;
+}
+/*Буллеты*/
+.image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgb(14, 13, 13);
+}
 
 /*Стрелки*/
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
-    color: #fff;
-    font-size: 80px;
+    
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    
+    background-color: rgb(73, 73, 73);
+}
+
+h2 {
+    font-size: 24px;
+}
+button {
+    font-size: 24px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-radius: 30px;
 }
